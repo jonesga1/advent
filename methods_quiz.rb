@@ -1,6 +1,15 @@
-	
-# TODO - write has_teen?
 
+# TODO - write has_teen?
+def has_teen?(a, b, c)
+	if a > 12 && a < 20
+		return true
+	elsif b > 12 && b < 20
+		return true
+	elsif c > 12 && c < 20
+		return true
+	end
+	return false
+end
 # TODO - write not_string
 
 # TODO - write icy_hot?
