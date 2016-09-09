@@ -33,7 +33,16 @@ def icy_hot?(a, b)
 end
 
 # TODO - write closer_to
+def closer_to(t, a, b)
+	if (t + a) < (t + b)
+		return a
+	elsif (t + a) > (t + b)
+		return b
+	elsif (t + a) == (t + b)
+		return 0
+	end
 
+end
 # TODO - write two_as_one?
 
 # TODO - write pig_latinify
