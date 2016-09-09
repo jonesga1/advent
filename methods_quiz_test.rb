@@ -39,4 +39,13 @@ describe 'Methods' do
       closer_to(2, 0, 4).must_equal(0)
     end
   end
+
+  describe 'two_as_one' do
+    it 'two numbers can be added to make the third' do
+      two_as_one?(2, 3, 5).must_equal(true)
+    end
+    it 'no two numbers can be added to make the third' do
+      two_as_one?(3, 5, 10).must_equal(false)
+    end
+  end
 end
