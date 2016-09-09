@@ -21,4 +21,13 @@ describe 'Methods' do
       not_string('notcream').must_equal('notcream')
     end
   end
+
+  describe 'icy_hot' do
+    it 'one temp is icy and other temp is hot' do
+      icy_hot?(-3, 101).must_equal(true)
+    end
+    it 'one or more temp is hot or neither' do
+      icy_hot?(50, 20).must_equal(false)
+    end
+  end
 end
