@@ -12,4 +12,13 @@ describe 'Methods' do
       has_teen?(2, 20, 5).must_equal(false)
     end
   end
+
+  describe 'not_string' do
+    it 'string does not begin with not' do
+      not_string('pizza').must_equal('notpizza')
+    end
+    it 'string already begins with not' do
+      not_string('notcream').must_equal('notcream')
+    end
+  end
 end
