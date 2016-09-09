@@ -30,4 +30,13 @@ describe 'Methods' do
       icy_hot?(50, 20).must_equal(false)
     end
   end
+
+  describe 'closer_to' do
+    it 'one guess is closer to the target' do
+      closer_to(1, 2, 3).must_equal(2)
+    end
+    it 'both guesses are same distance' do
+      closer_to(2, 0, 4).must_equal(0)
+    end
+  end
 end
